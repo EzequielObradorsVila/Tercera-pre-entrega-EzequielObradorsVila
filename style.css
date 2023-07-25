@@ -1,0 +1,143 @@
+/*estilos universales*/
+h1{
+
+}
+.titulo{
+    font-size: 70%;
+    text-align: center;
+    text-decoration: dashed;
+}
+/*Estilos barra de navegacion*/
+
+.navbar{
+    padding: 5%;
+    display:;
+    font-size: 1.175rem;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: ;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,85,10,1) 56%, rgba(52,245,2,1) 82%);
+}
+
+.navbar ul li{
+    display: inline-block;
+    align-content: center;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 1.175rem;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5%;
+    background-color: aliceblue;
+    &:hover{
+    background:linear-gradient(90deg, rgba(0,0,0,1) 11%, rgba(0,177,17,1) 79%);
+   
+    transform:scale(1.20);
+   transition: all .3s ease-in-out;
+    }
+}
+.navbar2{
+  display: inline-block;
+
+}
+
+.navbar2 ul li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.175rem;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 5%; 
+    &:hover{
+        background:linear-gradient(90deg, rgba(0,0,0,1) 11%, rgba(0,177,17,1) 79%);
+        }
+        transform: skew(5deg);
+}
+
+
+.navbar-contacto{
+    padding: 0%;
+    display:;
+    font-size: 1.175rem;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: ;
+    background-size: 5%;
+    background: rgb(116,116,116);
+    background: linear-gradient(90deg, rgba(116,116,116,1) 0%, rgba(171,171,171,1) 37%, rgba(255,255,255,1) 90%);
+}
+.navbar-contacto ul li{
+    display: inline-block;
+    align-content: center;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 1.175rem;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5%;
+    background-color: aliceblue;
+    &:hover{
+    background:linear-gradient(90deg, rgba(0,0,0,1) 11%, rgba(0,177,17,1) 79%);
+    }
+    transform: skew(5deg);
+   transition: all .8s ease-in-out;
+}
+
+
+
+/*box Styles*/
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+    border-bottom: 5px solid;
+    transition: transform 2s,scale.5s;
+
+    animation: change_color;
+}
+
+.box:hover{
+    transform: :rotate(180deg) scale(1.05);
+}
+
+
+/*Header Styles*/
+header.cabecera{
+    position: static;
+    top: 100%;
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image:url(../Media/man-2604149_1280.jpg);
+    background-attachment:local;
+    }
+ .cabecera h1{
+    position:relative;
+    left: 40px;
+    bottom: 10px;
+ }
+
+  .img_medium{
+    width: 350px;
+  }
+
+  .cabecera2{
+  }
+
+
+ /*Body styles*/
+  body{
+    background: rgb(0,177,17);
+    background: radial-gradient(circle, rgba(0,177,17,1) 20%, rgba(0,0,0,1) 84%);
+  }
+ .body-quienesomos{
+    background: rgb(0,0,0);
+   background: linear-gradient(90deg, rgba(0,0,0,1) 11%, rgba(6,97,33,1) 51%, rgba(14,235,80,0.9332107843137255) 96%);
+ }

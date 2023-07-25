@@ -1,0 +1,106 @@
+/*estilos titulos*/
+.title{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+p{
+    color: white;
+}
+
+/* Estilos del body*/
+   
+.body2{
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(200,99,123);
+    background: linear-gradient(90deg, rgba(200,99,123,1) 0%, rgba(48,23,30,1) 100%);
+    overflow: scroll;
+}
+
+
+
+.cabecera, .navbar, .seccion, .seccion2, .articulo, .pie {
+    padding:10px;
+    border: 1px solid;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 140px 40px repeat(3, auto) 70 ;
+    row-gap:  10px;
+    column-gap: 5px;
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "seccion cabecera cabecera"
+     "seccion articulo articulo"
+     "seccion articulo articulo"
+     "seccion2 seccion2 seccion2"
+     "pie pie pie";
+}
+
+     .cabecera{
+        grid-area: cabecera;
+     }
+
+     .navbar{
+        background-color:black;
+        grid-area: navbar;
+     }
+
+    .navbar ul{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .navbar ul li{
+            display: inline-block;
+            border: 1px solid;
+            cursor: pointer;
+            font-size: 1.175rem;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5%;
+            background-color: aliceblue;
+            &:hover{
+            background:linear-gradient(90deg, rgba(0,0,0,1) 11%, rgba(0,177,17,1) 79%);
+            }
+            transform: skew(5deg);
+           transition: all .8s ease-in-out;
+    }
+     
+    .seccion{
+        grid-area: seccion;
+
+    }
+    
+    .articulo{
+        grid-area: articulo;
+    }
+
+    .seccion2{
+        grid-area: seccion2;
+        
+
+    }
+
+   /*footer*/
+    
+    .pie{
+        grid-area: pie;
+    
+    }
